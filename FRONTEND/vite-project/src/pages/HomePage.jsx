@@ -44,7 +44,7 @@ const Homepage = () => {
             Loading Notes...
           </div>
         )}
-        {notes.length === 0 && !isRateLimited  && <NotesNotFound />}
+        {notes?.length === 0 && !isRateLimited  && <NotesNotFound />}
         {notes.length > 0 && !isRateLimited && (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {notes.map((note) => (
