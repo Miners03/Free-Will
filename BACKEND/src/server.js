@@ -11,7 +11,7 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 5001;
 const __dirname = path.resolve();
-const distPath = path.join(__dirname, "../frontend/vite-project/dist");
+const distPath = path.join(__dirname, "../FRONTEND/vite-project/dist");
 
 // ✅ Middleware
 app.use(
